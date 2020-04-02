@@ -164,5 +164,6 @@ solution:
 
 ## hard part : 
 -- What's the average number of authors per book?
+
 sol : 
 `select AVG(count) from (select book_authors.book_id, count(book_authors.author_id) from book_authors group by book_authors.book_id) as x;`
